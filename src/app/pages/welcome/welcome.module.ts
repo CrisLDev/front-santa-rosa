@@ -3,10 +3,11 @@ import { NgModule } from '@angular/core';
 import { WelcomeRoutingModule } from './welcome.routing';
 
 import { WelcomeComponent } from './welcome.component';
+import { SharedModule } from 'src/app/shared/shared.module';
 
 
 @NgModule({
-  imports: [WelcomeRoutingModule],
+  imports: [WelcomeRoutingModule, SharedModule],
   declarations: [WelcomeComponent],
   exports: [WelcomeComponent]
 })
